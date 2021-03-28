@@ -23,7 +23,7 @@
 ### Server architecture
 
 Kubernetes cluster via argocd cluster architecture:
-![cluster_architecture](./resources/cluster_architecture.png)
+![cluster_architecture](./resources/cluster_argocd.png)
 
 ### Database
 >*The database is the main part of the solution that stores the state of the solution. The database includes:*
