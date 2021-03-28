@@ -22,6 +22,14 @@
 
 ## Interface
 
+IBC transfer                        |  States                              | Un-escrow token                     | Active channels  |
+:----------------------------------:|:------------------------------------:|:-----------------------------------:|:----:
+![](./resources/screenshots/2.png)  |  ![](./resources/screenshots/1.png)  | ![](./resources/screenshots/8.png)  | ![](./resources/screenshots/9.png) |
+![](./resources/screenshots/4.png)  |  ![](./resources/screenshots/3.png)  | ![](./resources/screenshots/9.png)  |     |
+![](./resources/screenshots/5.png)  |
+![](./resources/screenshots/6.png)  |  
+![](./resources/screenshots/7.png)  |  
+
 ## Architecture
 
 For the full-fledged operation of the software solution, it is necessary to provide for each blockchain:
