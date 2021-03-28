@@ -25,7 +25,7 @@
 IBC transfer                        |  States                              | Un-escrow token                     | Active channels  |
 :----------------------------------:|:------------------------------------:|:-----------------------------------:|:----:
 ![](./resources/screenshots/2.PNG)  |  ![](./resources/screenshots/1.PNG)  | ![](./resources/screenshots/8.PNG)  | ![](./resources/screenshots/9.PNG) |
-![](./resources/screenshots/4.PNG)  |  ![](./resources/screenshots/3.PNG)  | ![](./resources/screenshots/9.PNG)  |     |
+![](./resources/screenshots/4.PNG)  |  ![](./resources/screenshots/3.PNG)  |    |     |
 ![](./resources/screenshots/5.PNG)  |
 ![](./resources/screenshots/6.PNG)  |  
 ![](./resources/screenshots/7.PNG)  |  
