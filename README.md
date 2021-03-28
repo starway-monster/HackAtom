@@ -20,6 +20,9 @@
 
 ### Solution architecture
 
+Starway monster solution architecture:
+![starway_monster_architecture](./resources/starway_monster_architecture.png)
+
 ### Server architecture
 
 Kubernetes cluster via argocd cluster architecture:
