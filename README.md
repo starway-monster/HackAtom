@@ -6,10 +6,9 @@
 * [starway.monster](https://starway.monster) - a site that clearly shows how you can work with ibc.
 * [github.com/starway-monster](https://github.com/starway-monster) - github project repository, which contains all the developments of this project.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PT4vMfVP0qI/0.jpg)](https://www.youtube.com/watch?v=PT4vMfVP0qI)
-
 ## Content
 * [Content](#Content)
+* [Demo](#Demo)
 * [Interface](#Interface)
 * [Architecture](#Architecture)
   * [Solution architecture](#Solution-architecture)
@@ -21,6 +20,10 @@
   * [Continuous deployment](#Continuous-Deployment)
 * [Installation and Configuration](#Installation-and-Configuration)
 * [Repositories](#Repositories)
+
+## Demo
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PT4vMfVP0qI/0.jpg)](https://www.youtube.com/watch?v=PT4vMfVP0qI)
 
 ## Interface
 
