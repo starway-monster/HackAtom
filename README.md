@@ -18,7 +18,13 @@
 
 ## Architecture
 
+For the full-fledged operation of the software solution, it is necessary to provide for each blockchain:
+* RPC endpoint fullnode without ssl
+* RPC endpoint fullnode with ssl
+
 ### Solution architecture
+
+
 
 Starway monster solution architecture:
 ![starway_monster_architecture](./resources/starway_monster_architecture.png)
