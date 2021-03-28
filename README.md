@@ -10,7 +10,13 @@
 * [Content](#Content)
 * [Interface](#Interface)
 * [Architecture](#Architecture)
+  * [Solution architecture](#Solution-architecture)
+  * [Server architecture](#Server-architecture)
+  * [Database](#Database)
+  * [Message broker](#Message-broker)
 * [Deployments](#Deployments)
+  * [Continuous integration](#Continuous-Integration)
+  * [Continuous deployment](#Continuous-Deployment)
 * [Installation and Configuration](#Installation-and-Configuration)
 * [Repositories](#Repositories)
 
