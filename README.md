@@ -16,8 +16,22 @@
 ## Architecture
 ### Solution architecture
 
-### Database schema
+### Database
+>*The database is the main part of the solution that stores the state of the solution. The database includes:*
+>* *Core tables*
+>* *Functions*
+
+Database migrations work using the Hasura GraphQL migrations engine. The core tables store the state of the main solution logic and information about blockchains.
+
 ![db_schema](./resources/db_schema.png)
+
+The functions are used to calculate statistics from **core tables**. The function is called by the front.
+
+* **get_ibc_chain_graph_edges:**
+
+    public.get_ibc_chain_graph_edges() RETURNS SETOF fn_table_ibc_chain_graph_edges
+
+Details of the ```temp_t_total_stats``` temporary table are [here](database.md#temporary-tables).
 
 ### Message broker
 
