@@ -24,11 +24,11 @@
 
 IBC transfer                        |  States                              | Un-escrow token                     | Active channels  |
 :----------------------------------:|:------------------------------------:|:-----------------------------------:|:----:
-![](./resources/screenshots/2.png)  |  ![](./resources/screenshots/1.png)  | ![](./resources/screenshots/8.png)  | ![](./resources/screenshots/9.png) |
-![](./resources/screenshots/4.png)  |  ![](./resources/screenshots/3.png)  | ![](./resources/screenshots/9.png)  |     |
-![](./resources/screenshots/5.png)  |
-![](./resources/screenshots/6.png)  |  
-![](./resources/screenshots/7.png)  |  
+![](./resources/screenshots/2.PNG)  |  ![](./resources/screenshots/1.PNG)  | ![](./resources/screenshots/8.PNG)  | ![](./resources/screenshots/9.PNG) |
+![](./resources/screenshots/4.PNG)  |  ![](./resources/screenshots/3.PNG)  | ![](./resources/screenshots/9.PNG)  |     |
+![](./resources/screenshots/5.PNG)  |
+![](./resources/screenshots/6.PNG)  |  
+![](./resources/screenshots/7.PNG)  |  
 
 ## Architecture
 
