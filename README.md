@@ -19,6 +19,10 @@
 ### Database schema
 ![db_schema](./resources/db_schema.png)
 
+### Message broker
+
+>*The project uses the RabbitMQ message broker with one queue. All [watchers](watcher.md) write data to it, and the [processor/processors](processor.md) take data from the queue in portions.*
+
 ## Deployments
 
 ### Continuous Integration
