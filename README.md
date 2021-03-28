@@ -9,6 +9,7 @@
 ## Content
 * [Content](#Content)
 * [Architecture](#Architecture)
+* [Deployments](#Deployments)
 * [Installation and Configuration](#Installation-and-Configuration)
 * [Repositories](#Repositories)
 
@@ -17,6 +18,32 @@
 
 ### Database schema
 ![db_schema](./resources/db_schema.png)
+
+## Deployments
+
+### Continuous Integration
+
+>*Developers merge their changes back to the main branch as often as possible. The developer's changes are validated by creating a build and running automated tests against the build. By doing so, you avoid integration challenges that can happen when waiting for release day to merge changes into the release branch.*<br>
+>*Continuous integration puts a great emphasis on testing automation to check that the application is not broken whenever new commits are integrated into the main branch.*
+
+
+**Continuous integration has several main stages:**
+
+* When changes are pushed to the master branch of the repositories at [github.com/starway-monster](https://github.com/starway-monster), **GitHub Actions** are triggered.
+* **GitHub Actions** builds, tests, creates docker images and publishes them in our container registry on DigitalOcean - `registry.digitalocean.com/starway-monster`.
+* After completing the job, **GitHub Actions** sends a notification to the telegram chat about the success or failure of the execution.
+
+**GitHub Actions** workflow settings are described in each repository in the `.github/workflows` directory.
+
+Each GitHub repository has secret keys for publishing images, for sending messages to telegrams, etc.
+
+### Continuous Deployment
+
+>*In our CI / cd process, we use argocd to manage the deployment*
+
+![delivery-vs-deploy](resources/argocd_architecture.png)
+
+Our continuous delivery uses **"argoCD"** and keeps track of the **"master"** directory in the **"deploy"** repository. The development application configuration for **"argoCD"** is located at **deploy/hackatom/app.yaml**. Any changes made to the **hackatom** directory of the deploy repository will be reflected on the development server.
 
 ## Installation and Configuration
 `All components of our solution use Docker. By following the instructions in each individual repository, you can
