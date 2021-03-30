@@ -101,8 +101,7 @@ Each GitHub repository has secret keys for publishing images, for sending messag
 Our continuous delivery uses **"argoCD"** and keeps track of the **"master"** directory in the **"deploy"** repository. The development application configuration for **"argoCD"** is located at **deploy/hackatom/app.yaml**. Any changes made to the **hackatom** directory of the deploy repository will be reflected on the development server.
 
 ## Installation and Configuration
-`All components of our solution use Docker. By following the instructions in each individual repository, you can
-quickly and easily deploy the work bench. We use our services in kubernetes, but you can do it directly without any problems.`
+`All components of our solution use Docker. By following the instructions in each individual repository, you can quickly and easily deploy the work environment. It is recommended to use an orchestrator to control Watcher restart if there are problems with connecting blocks or decoding blocks. We use our services in kubernetes, but you can do it directly without any problems.`
 
 ## Repositories
 
