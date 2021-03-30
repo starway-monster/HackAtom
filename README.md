@@ -109,7 +109,7 @@ quickly and easily deploy the work bench. We use our services in kubernetes, but
 * [starway-monster/HackAtom](https://github.com/starway-monster/HackAtom) - starway monster project root documentation repository
 * [starway-monster/front](https://github.com/starway-monster/front) - source code of a site written in angular. Displays route lookup data and allows users to perform interblockchain transactions
 * [starway-monster/database](https://github.com/starway-monster/database) - source code of scripts for the database, code for configuring its deployment, migrations and graphql (hasura) api.
-* [starway-monster/server](https://github.com/starway-monster/server) - source code of a site written in angular
+* [starway-monster/server](https://github.com/starway-monster/server) - server source code written in java. Receives data on channels from the database and is looking for interblockchain paths using the Dijkstra algorithm. Also finds un-escrow routes.
 * [starway-monster/deploy](https://github.com/starway-monster/deploy) - CI/CD setup code via argocd
 * [starway-monster/cosmos-sdk](https://github.com/starway-monster/cosmos-sdk) - fork cosmos/cosmos-sdk that fixes FungibleTokenPacketData decoding error
 * [starway-monster/cosmos-watcher](https://github.com/starway-monster/cosmos-watcher) - this is a fork of mapofzones/cosmos-watcher that has been modified for use in the starway monster. Allows you to connect to the blockchain fullnode and collect blockchain blocks
