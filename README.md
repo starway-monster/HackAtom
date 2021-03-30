@@ -94,7 +94,7 @@ Each GitHub repository has secret keys for publishing images, for sending messag
 
 ### Continuous Deployment
 
->*In our CI / cd process, we use argocd to manage the deployment*
+>*In our CI/CD process, we use argocd to manage the deployment*
 
 ![delivery-vs-deploy](resources/argocd_architecture.png)
 
