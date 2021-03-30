@@ -38,19 +38,30 @@ IBC transfer                        |  States                              | Un-
 ## Architecture
 
 For the full-fledged operation of the software solution, it is necessary to provide for each blockchain:
-* RPC endpoint fullnode without ssl
-* RPC endpoint fullnode with ssl
+* RPC endpoint fullnode without ssl(need for watchers)
+* RPC endpoint fullnode with ssl(need for front)
 
 ### Solution architecture
 
-
+* **Front** - `site written in angular. Displays route lookup data and allows users to perform interblockchain transactions. Interact with API(Hasura) and API2(server). Also uses Keplr wallet and COSMJS library.`
+* **Server** - `rest service written in java. Receives data on channels from the database and is looking for interblockchain paths using the Dijkstra algorithm. Also finds un-escrow routes.`
+* **Hasura** - `the Hasura GraphQL Engine provides GraphQL APIs over new or existing Postgres databases.`
+* **Database** - `postgresql database, which stores the main state in core tables, has functions for convenient requests and features tables.`
+* **Processor** - `this is a fork of mapofzones/txs-processor that has been modified for use in the starway monster. Allows you to process data received from watchers.`
+* **Watcher** - `this is a fork of mapofzones/cosmos-watcher that has been modified for use in the starway monster with many blockchains. Allows you to connect to the blockchain fullnode and collect blockchain blocks.`
 
 Starway monster solution architecture:
 ![starway_monster_architecture](./resources/starway_monster_architecture.png)
 
 ### Server architecture
 
-Kubernetes cluster via argocd cluster architecture:
+Services located outside the Kubernets cluster:
+* front(angular)
+* server(java)
+* message brocker(rabbitmq)
+* database(postgresql)
+
+Kubernetes cluster architecture via argocd:
 ![cluster_architecture](./resources/cluster_argocd.png)
 
 ### Database
