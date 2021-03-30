@@ -57,6 +57,7 @@ Kubernetes cluster via argocd cluster architecture:
 >*The database is the main part of the solution that stores the state of the solution. The database includes:*
 >* *Core tables*
 >* *Functions*
+>* *Function tables*
 
 Database migrations work using the Hasura GraphQL migrations engine. The core tables store the state of the main solution logic and information about blockchains.
 
@@ -68,7 +69,9 @@ The functions are used to calculate statistics from **core tables**. The functio
 
     public.get_ibc_chain_graph_edges() RETURNS SETOF fn_table_ibc_chain_graph_edges
 
-Details of the ```temp_t_total_stats``` temporary table are [here](database.md#temporary-tables).
+Details of the ```fn_table_ibc_chain_graph_edges``` temporary table are here:
+
+![db_fn_tables](./resources/db_fn_tables.png)
 
 ### Message broker
 
