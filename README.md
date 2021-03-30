@@ -2,6 +2,8 @@
 
 ![logo](./resources/logo.png)
 
+> **Your new DeFi perspective to cross-chain portable value**
+
 `Starway Monster is a project that we created at the HackAtom hackathon.`
 * [starway.monster](https://starway.monster) - a site that clearly shows how you can work with ibc.
 * [github.com/starway-monster](https://github.com/starway-monster) - github project repository, which contains all the developments of this project.
